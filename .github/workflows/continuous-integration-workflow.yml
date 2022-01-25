@@ -9,10 +9,7 @@ jobs:
     runs-on: ${{ matrix.host }}
     strategy:
       matrix:
-        host: [
-          "ubuntu-latest",
-          "macos-10.15",
-        ]
+        host: "ubuntu-latest"
     steps:
       - name: "clone"
         uses: actions/checkout@v2
